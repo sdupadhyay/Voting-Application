@@ -5,4 +5,5 @@ const generateToken = (userData) => {
 	});
 	return token;
 };
+
 module.exports = { generateToken };
