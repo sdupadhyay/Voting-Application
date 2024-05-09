@@ -10,9 +10,9 @@
 
 | Method   | URL                                      | Description                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
-| `POST`    | `/api/v1/signup`                             | Signup the user by providing various details. |
-| `POST`   | `/api/v1/login`                             | Login the user by providing email and password .                       |
-| `POST`    | `/api/v1/logout`                             | Removes the token from the cookies.                      |
+| `POST`    | `/api/v1/user/signup`                             | Signup the user by providing various details. |
+| `POST`   | `/api/v1/user/login`                             | Login the user by providing email and password .                       |
+| `POST`    | `/api/v1/user/logout`                             | Removes the token from the cookies.                      |
 | `POST`   | `/api/v1/candidate`                             | Creates the new candidate.                       |
 | `PUT`   | `/api/v1/candidate/:candidateID`                             | Update the candidates details.                        |
 | `DELETE`    | `/api/v1/candidate/:candidateID`                             | Delete the candidates from the record.                     |
