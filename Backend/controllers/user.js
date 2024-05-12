@@ -12,7 +12,9 @@ const signup = async (req, res) => {
 		}
 		await User.create(req.body);
 		//console.log(newUser);
-		res.status(200).json({ message: "User Created Sucessfully" });
+		res
+			.status(200)
+			.json({ message: "User Created Sucessfully", statusCode: 200 });
 	} catch (err) {
 		console.log(err);
 		res.status(500).json({ err: "Somrthing went wrong", err });
@@ -31,7 +33,7 @@ const login = async (req, res) => {
 		return res
 			.status(200)
 			.cookie("Token", token, options)
-			.json({ message: "User Login Sucessfully" });
+			.json({ message: "User Login Sucessfully",statusCode: 200 });
 	} catch (err) {
 		console.log(err);
 		return res.status(500).json(err);
